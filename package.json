@@ -1,0 +1,25 @@
+{
+  "name": "angular2-jcf-directive",
+  "version": "0.0.1",
+  "description": "use JCF - JavaScript Custom Forms in your angular projects as an attribute directive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrimAgency/angular-jcf-module.git"
+  },
+  "keywords": [
+    "JCF",
+    "angular",
+    "angular2",
+    "jquery"
+  ],
+  "author": "Dominique Miller <dom@trimagency.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrimAgency/angular-jcf-module/issues"
+  },
+  "homepage": "https://github.com/TrimAgency/angular-jcf-module#readme"
+}
