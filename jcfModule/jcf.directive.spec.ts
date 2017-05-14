@@ -8,26 +8,30 @@ import * as jcf from 'jcf';
 
 @Component({
   template: `
-    <input type="checkbox" name="vehicle" value="Bike" jcf> 
+    <input type="number" name="vehicle" value="" jcf> 
   `
 })
 class TestComponent {}
-
-beforeEach(() => {
-  spyOn(jcf, 'replace');
-
-  spyOn(jcf, 'refresh');
-
-  spyOn(jcf, 'destroy');
-})
 
 describe('JcfDirective', () => {
 
   let component: TestComponent;
   let fixture: ComponentFixture<TestComponent>;
   let el: DebugElement;
-
   beforeEach(() => {
+
+    spyOn(jcf, 'replace').and.callFake(
+      () => { console.log('replace called'); }
+    );
+
+    spyOn(jcf, 'refresh').and.callFake(
+      () => { console.log('refresh called'); }
+    );
+
+    spyOn(jcf, 'destroy').and.callFake(
+      () => { console.log('destroy called'); }
+    );
+
     TestBed.configureTestingModule({
       declarations: [
         JcfDirective,
@@ -44,11 +48,25 @@ describe('JcfDirective', () => {
     expect(directive).toBeDefined();
   });
 
-  it('should replace input with jcf element', () => {
-    const jcfClass = document.getElementsByClassName('jcf-checked')
-    console.log(jcfClass);
+  it('should create the jcf element on init of directive', () => {
+    let directive = new JcfDirective(el.nativeElement);
+    directive.ngOnInit();
 
-    expect(jcfClass.length).toEqual(1);
+    expect(jcf.replace).toHaveBeenCalled();
+  });
+
+  it('should refresh element on value change', () => {
+    const input = el.query(By.directive(JcfDirective)).nativeElement;
+    input.value = 4;
+    input.dispatchEvent(new Event('change'));
+
+    expect(jcf.refresh).toHaveBeenCalled();
+  });
+
+  it('should destroy jcf element on directive destroy', () => {
+    fixture.destroy();
+
+    expect(jcf.destroy).toHaveBeenCalled();
   });
 
 })
