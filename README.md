@@ -1,4 +1,4 @@
-# angular-jcf-module
+# angular-jcf-module 
 Use JCF - JavaScript Custom Forms in angular projects. 
 
 Both JCF and jQuery are included as dependencies.
@@ -51,4 +51,4 @@ Add the JcfModule to the `app.module.ts` imports array:
 Add `jcf` as an attribute the the html element you would like jcf to operate on:
 `<input type="number" name="vehicle" value="" jcf>`
 
-Additional JCF configutation please reference [JCF](https://github.com/w3co/jcf/blob/master/README.md) for more information.
+Additional JCF configuration please reference [JCF](https://github.com/w3co/jcf/blob/master/README.md) for more information.
