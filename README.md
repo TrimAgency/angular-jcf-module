@@ -46,7 +46,7 @@ Add the JcfModule to the `app.module.ts` imports array:
 })
 ```
 
-## Useage
+## Usage
 
 Add `jcf` as an attribute the the html element you would like jcf to operate on:
 `<input type="number" name="vehicle" value="" jcf>`
