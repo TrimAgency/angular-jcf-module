@@ -2,7 +2,6 @@ import { DebugElement, Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { JcfDirective } from './jcf.directive';
-import * as jQuery from 'jquery';
 import * as jcf from 'jcf';
 
 

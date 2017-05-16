@@ -1,5 +1,4 @@
 import { Directive, ElementRef, OnInit, OnDestroy, HostListener } from '@angular/core';
-import * as jQuery from 'jquery';
 import * as jcf from 'jcf';
 
 @Directive({
