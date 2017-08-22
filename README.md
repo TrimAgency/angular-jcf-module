@@ -26,7 +26,7 @@ Add additional jcf modules as needed to the scripts array.
 
 For non CLI projects add the required script tags to index.html. Please reference [JCF](https://github.com/w3co/jcf/blob/master/README.md) for more information.
 
-Add the JcfModule to the `app.module.ts` imports array:
+Add the JcfModule to the `app.module.ts` imports array(or any module that requires the jcf attribute directive):
 ```
 @NgModule({
   declarations: [
