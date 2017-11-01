@@ -14,7 +14,7 @@ Install using yarm
 Add JCF and Jquery to the `.angular-cli-json` file:
 ```JSON
 "styles": [
-        "styles.css":[
+        "styles.css",
         "../node_modules/jcf/dist/css/theme-minimal/jcf.css"
       ],
       "scripts": [
