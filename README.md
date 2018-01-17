@@ -5,16 +5,16 @@ Both JCF and jQuery are included as dependencies.
 
 ## Installation
 Install using npm 
-`npm install angular-jcf-module`
+`npm install angular2-jcf-directive`
 
 Install using yarm
-`yarn add angular-jcf-module`
+`yarn add angular2-jcf-directive`
 
 ## Importing into an angular CLI project
 Add JCF and Jquery to the `.angular-cli-json` file:
 ```JSON
 "styles": [
-        "styles.css":[
+        "styles.css",
         "../node_modules/jcf/dist/css/theme-minimal/jcf.css"
       ],
       "scripts": [
@@ -26,8 +26,10 @@ Add additional jcf modules as needed to the scripts array.
 
 For non CLI projects add the required script tags to index.html. Please reference [JCF](https://github.com/w3co/jcf/blob/master/README.md) for more information.
 
-Add the JcfModule to the `app.module.ts` imports array:
+Add the JcfModule to the `app.module.ts` imports array(or any module that requires the jcf attribute directive):
 ```
+import { JcfModule } from 'angular2-jcf-directive/jcfModule';
+
 @NgModule({
   declarations: [
     AppComponent
