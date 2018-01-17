@@ -20,7 +20,6 @@ export class JcfDirective implements OnInit, OnDestroy{
 
   @HostListener('change', ['$event'])
   onChange(event: Event) {
-     console.log(event);
      jcf.refresh(this.element.nativeElement);
   }
 
