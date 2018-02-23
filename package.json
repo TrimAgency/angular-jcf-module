@@ -1,6 +1,6 @@
 {
   "name": "angular2-jcf-directive",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "use JCF - JavaScript Custom Forms in your angular projects as an attribute directive.",
   "main": "./bundles/angular2-jcf-directive.umd.js",
   "module": "./angular2-jcf-directive.es5.js",

@@ -59,11 +59,15 @@ return Promise.resolve()
         // The key here is library name, and the value is the the name of the global variable name
         // the window object.
         // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals for more.
+        'jcf': 'jcf',
+        'jquery': 'jquery',
         '@angular/core': 'ng.core'
       },
       external: [
         // List of dependencies
         // See https://github.com/rollup/rollup/wiki/JavaScript-API#external for more.
+        'jcf',
+        'jquery',
         '@angular/core'
       ],
       plugins: [

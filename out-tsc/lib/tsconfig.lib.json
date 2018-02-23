@@ -1,16 +1,15 @@
 {
-  "extends": "./tsconfig.lib.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
-    "outDir": "../../out-tsc/lib-es5/",
+    "outDir": "../../out-tsc/lib-es2015/",
+    "target": "es2015",
+    "rootDir": "./",
     "baseUrl": "",
     "types": []
   },
   "files": [
     "./index.ts",
     "./typings.d.ts"
-  ],
-  "exclude": [
   ],
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
