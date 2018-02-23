@@ -1,5 +1,5 @@
 import { Directive, ElementRef, OnInit, OnDestroy, HostListener } from '@angular/core';
-import * as jcf from 'jcf';
+const jcf = require('jcf');
 
 @Directive({
   // tslint:disable-next-line:directive-selector
