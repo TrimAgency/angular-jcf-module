@@ -1,1 +1,0 @@
-{"version":3,"sources":["../lib/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAA,EAAa,MAAA,+BAAA,CAAA;AACtB,OAAO,EAAE,SAAA,EAAU,MAAA,cAAA,CAAA","file":"index.js","sourceRoot":"","sourcesContent":["export { JcfDirective } from './src/directive/jcf.directive';\nexport { JcfModule } from './src/module';\n"]}
