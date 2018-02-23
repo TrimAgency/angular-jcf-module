@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { JcfDirective } from './jcf.directive';
+import { JcfDirective } from './directive/jcf.directive';
 
 @NgModule({
     imports: [
@@ -16,4 +16,3 @@ import { JcfDirective } from './jcf.directive';
     providers: [],
 })
 export class JcfModule { }
-
