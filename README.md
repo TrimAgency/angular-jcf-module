@@ -28,7 +28,7 @@ For non CLI projects add the required script tags to index.html. Please referenc
 
 Add the JcfModule to the `app.module.ts` imports array(or any module that requires the jcf attribute directive):
 ```
-import { JcfModule } from 'angular2-jcf-directive/jcfModule';
+import { JcfModule } from 'angular2-jcf-directive';
 
 @NgModule({
   declarations: [
