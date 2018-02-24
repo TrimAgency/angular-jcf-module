@@ -60,15 +60,17 @@ return Promise.resolve()
         // the window object.
         // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals for more.
         'jcf': 'jcf',
-        'jquery': 'jquery',
-        '@angular/core': 'ng.core'
+        'jquery': 'jQuery',
+        '@angular/core': 'ng.core',
+        '@angular/common': 'ng.common'
       },
       external: [
         // List of dependencies
         // See https://github.com/rollup/rollup/wiki/JavaScript-API#external for more.
         'jcf',
         'jquery',
-        '@angular/core'
+        '@angular/core',
+        '@angular/common'
       ],
       plugins: [
         commonjs({
